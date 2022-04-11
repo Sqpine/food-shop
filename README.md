@@ -1,3 +1,4 @@
+# I get mixed-content error because I use http api. But you can clone my main branch and try to start it project. It must working.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
