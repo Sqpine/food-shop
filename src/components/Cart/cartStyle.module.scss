@@ -1,0 +1,152 @@
+.categoryName {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #393D4A;
+}
+
+.cart {
+  margin: 0 100px 50px 100px;
+
+  .option {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 100px;
+    p{
+      font-weight: 500;
+      font-size: 24px;
+      color: #292B33;
+    }
+  }
+
+  hr {
+    margin: 10px 0 10px 50px;
+  }
+}
+
+.cartItemDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #393D4A;
+  .remove {
+    background: none;
+    outline: none;
+    border: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .productInfo {
+    display: flex;
+    gap: 30px;
+  }
+
+  .item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .productName {
+    font-weight: 500;
+    font-size: 24px;
+    color: #393D4A;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 20px;
+    color: #393D4A;
+    font-weight: 600;
+  }
+
+  .counter {
+    background: #F1F1F2;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    outline: 2px solid #E1E2E4;
+
+    .button {
+      width: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+
+  .subtotal {
+    text-align: right;
+    width: 100px;
+  }
+}
+
+.buy:hover, .buttonCounter:hover {
+  background: #E6BC3B;
+  transition: all ease-in-out 0.3s;
+}
+
+.buy:active, .buttonCounter:active {
+  background: #FFD141;
+  transition: all ease-in-out 0.3s;
+}
+
+.checkout {
+  display: flex;
+  justify-content: right;
+  gap: 40px;
+
+  p {
+    font-size: 24px;
+    margin: 15px 0 15px 0;
+    font-weight: 600;
+    color: #393D4A;
+  }
+
+  .buttonCheckout {
+    cursor: pointer;
+    border-radius: 5px;
+    background: #3A3D49;
+    transition: background-color ease-in-out 0.3s;
+
+    button {
+      padding: 0 20px 0 20px;
+      outline: none;
+      background: transparent;
+      border: none;
+      width: 100%;
+      height: 100%;
+      font-weight: 600;
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .buttonCheckout:hover {
+    background: #292B33;
+    transition: background-color ease-in-out 0.3s;
+  }
+
+  .buttonCheckout:active {
+    background: #3A3D49;
+  }
+}
+
+.cartItemDetail, .categoryName, .checkout {
+  animation: ease-in-out opacity 0.3s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

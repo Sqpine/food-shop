@@ -1,0 +1,60 @@
+.checkoutPage{
+  position:relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 0 50px 0;
+  a{
+    text-decoration: none;
+  }
+  p{
+    font-weight: 500;
+    color: #292B33;
+  }
+  h1{
+    font-weight: 500;
+    color: #292B33;
+  }
+  .productName{
+    font-weight: 600;
+    font-size: 24px;
+    color: #292B33;
+  }
+  .subtotal{
+    font-weight: 400;
+    font-size: 24px;
+    color: #292B33;
+  }
+  .checkoutBlock{
+    position:sticky;
+    top: 100px;
+    .checkoutForm {
+      .item,.items{
+        padding: 10px 0 10px 0;
+      }
+      .item{
+
+      }
+      .items {
+        display: flex;
+        gap: 50px;
+      }
+    }
+  }
+
+  .priceBlock{
+    width: 30%;
+  }
+}
+.checkoutPage{
+  animation: ease-in-out opacity 0.3s;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin flexible($justify-content,$align-items){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+.categories{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #F5F5F5;
+  @include flexible(center,baseline);
+  gap: 31px;
+  padding: 20px 0 16px 0;
+  a{
+    text-decoration: none;
+    text-underline: none;
+  }
+  span{
+    color: #393D4A;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+.category{
+  @include flexible(start,center);
+  gap:10px;
+  transition: opacity ease-in-out 0.3s;
+}
+.category:hover{
+  opacity: 0.7;
+  transition: opacity ease-in-out 0.3s;
+}

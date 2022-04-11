@@ -1,0 +1,139 @@
+.productBox {
+  box-sizing: content-box;
+  border: 1px solid transparent;
+  max-width: 260px;
+  border-radius: 10px;
+  a{
+    text-decoration: none;
+  }
+  .heroSection{
+    position: relative;
+    z-index: 1;
+  }
+  .heroImg {
+    display: block;
+    margin: 0 auto;
+  }
+  .heroSection:hover{
+    .wishAdd{
+      opacity: 1;
+      transition: opacity ease-in-out 0.3s;
+    }
+  }
+
+  .wishAdd {
+    opacity: 0;
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity ease-in-out 0.3s;
+  }
+
+  .detail {
+    padding: 20px;
+  }
+
+  .heroText {
+    font-weight: 600;
+    font-size: 26px;
+    color: #393D4A;
+  }
+
+  .tag {
+    font-weight: 400;
+    font-size: 16px;
+    color: #777A83;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 26px;
+    color: #393D4A;
+  }
+  .buy {
+    cursor: pointer;
+    opacity: 0;
+    background: #FFD141;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    span {
+      margin: 0 0 0 10px;
+      font-size: 16px;
+      color: #393D4A;
+      font-weight: 400;
+    }
+  }
+
+  .counter{
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    .count{
+      background: #F1F1F2;
+      padding: 20px 25px 20px 25px;
+      border-radius: 10px;
+      gap: 20px;
+      outline: 2px solid #E1E2E4;
+    }
+    .controller{
+      cursor: pointer;
+      padding: 20px 25px 20px 25px;
+      border-radius: 10px;
+      background: #FFD141;
+    }
+    .button{
+      width: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .controller:hover{
+      background: #E6BC3B;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+
+  .buy:hover, .buttonCounter:hover,.controller:hover {
+    background: #E6BC3B;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .buy:active, .buttonCounter:active,.controller:active {
+    background: #FFD141;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+
+.productBox:hover {
+  border: 1px solid #bdc0ca;
+
+  .buy {
+    opacity: 1;
+    transition: opacity ease-in-out 0.3s;
+  }
+}
+
+.products {
+  padding: 30px 0 0 0;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categoryName {
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #393D4A;
+}

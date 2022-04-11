@@ -1,0 +1,43 @@
+.emptyPage{
+  padding: 0 0 50px 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    text-decoration: none;
+  }
+  img{
+    display: block;
+    margin: auto;
+  }
+  h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #393D4A;
+  }
+  button{
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    display: block;
+    background: #393D4A;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
+}
+.emptyPage{
+  animation: ease-in-out opacity 0.3s;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
